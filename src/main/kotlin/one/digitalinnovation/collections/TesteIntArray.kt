@@ -13,7 +13,7 @@ fun main() {
         println(valor)
     }
     println("---------------------------")
-//segunda forma de array
+//segunda forma de array for lambída
     values.forEach {
         println(it)
     }
