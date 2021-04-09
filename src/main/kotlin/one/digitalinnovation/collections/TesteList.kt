@@ -10,9 +10,12 @@ fun main() {
 
         println("---------------")
         println(funcionarios.find { it.nome== "Maria" })
+        println("---------------")
 
+         funcionarios.sortedBy { it.salario}.//utilizando um recurso chamado encadeamento(sortedBy)
+         forEach{ println(it)}// tem a função de finalizar todas as operações atreladas a colecão
          println("---------------")
-    //utilizando um recurso chamado encadeamento(sortedBy)
+
         funcionarios.groupBy { it.tipoContratacao }.// agrupando valores
         forEach{ println(it)}// tem a função de finalizar todas as operações atreladas a colecão
 
@@ -20,18 +23,3 @@ fun main() {
     }
 
 
-data class Funcionario(
-    val nome: String,
-    val salario: Double,
-    val tipoContratacao: String
-
-){
-    //sobreescrevendo o toString utilizando recursos do kotlin para imprimir mais organizado
-    override fun toString(): String =
-     """
-         Nome: $nome
-         Salario: $salario
-     """.trimIndent()
-
-
-}
