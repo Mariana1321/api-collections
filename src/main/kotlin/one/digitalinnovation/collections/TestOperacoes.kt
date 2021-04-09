@@ -9,8 +9,8 @@ fun main() {
     }
     println("-----------------")
    // operação com salarios maiores, menores e a média salarial
-    println("Maior salarios:  ${salarios.max()}")
-    println("Menor salarios:  ${salarios.min()}")
+    println("Maior salarios:  ${salarios.maxOrNull()}")
+    println("Menor salarios:  ${salarios.minOrNull()}")
     println("Média salarial:  ${salarios.average()}")
 
     // Operação de filtragem de valores
