@@ -8,7 +8,7 @@ class Repositorio<T> {
          map[id] = value//utilizando o recurso put
      }
 
-    fun findById(id: String){
+    fun findById(id: String)=
         map[id]// Utilizando o get retornando o valor da variável
-    }
+
 }
