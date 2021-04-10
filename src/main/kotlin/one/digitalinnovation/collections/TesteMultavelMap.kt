@@ -12,5 +12,12 @@ fun main() {
     repositorio.create(pedro.nome, pedro)
     repositorio.create(maria.nome, maria)
 
-    println(repositorio.findById(joao.nome))
+    println(repositorio.findById(maria.nome))
+
+    println("----------------")
+    repositorio.finAll().forEach { println(it) } // trazendo uma coleção de elementos que estão gravadas no map
+
+    println("----------------")
+    repositorio.remove(maria.nome)// excluindo funcionário da lista
+    repositorio.finAll().forEach { println(it) }// pegando todos os valores e imprimindo no relatório
 }

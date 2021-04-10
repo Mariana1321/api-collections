@@ -8,7 +8,12 @@ class Repositorio<T> {
          map[id] = value//utilizando o recurso put
      }
 
+    fun remove(id: String)= map.remove(id)//fazendo a remoção de uma funcionario (exclusão)
+
+
     fun findById(id: String)=
         map[id]// Utilizando o get retornando o valor da variável
+
+    fun finAll()= map.values// ele devolve a multable collections resgatando o values
 
 }
